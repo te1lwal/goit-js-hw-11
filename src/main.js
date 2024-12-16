@@ -32,7 +32,6 @@ form.addEventListener('submit', event => {
   fetchImages(query)
     .then(data => {
       hideLoader(loader); 
-
       if (data.hits.length === 0) {
         iziToast.warning({
           message: 'Sorry, there are no images matching your search query.',
